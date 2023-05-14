@@ -1,0 +1,442 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  /*width:100vw;*/
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #e5e5e5 0%, white 100%);
+ /*transition: background-color 0.3s ease;
+ color: #333;*/
+}
+
+
+.auth-form-container, .login-form, .register-form{
+
+display:flex;
+flex-direction: column;
+
+}
+
+.auth-form-container{
+    padding:5rem;
+    border:5px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 2px 4px;
+  }
+
+
+.auth-form-container{
+  padding:5rem;
+  border:5px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 2px 4px;
+}
+
+.login-form{
+  border:5px solid white;
+  padding:5rem;
+  border-radius: 10px;
+  box-shadow: 5px 2px 4px;
+  
+}
+
+label{
+text-align: center;
+padding: 0.25rem 0;
+
+
+}
+
+input{
+margin: 0.5rem 0;
+padding: 1rem;
+border: none;
+border-radius: 10px;
+}
+
+.button{
+  border: none;
+  background-color: white;
+  padding: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #443DF6;
+  color:white;
+  margin: 0.5rem 0; 
+}
+
+button{
+  border: none;
+  background-color: white;
+  padding: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #443DF6;
+  color:white;
+  margin: 0.5rem 0; 
+}
+
+.link-btn{
+background: none;
+color:white;
+text-decoration: underline;
+color:#443DF6; 
+}
+
+
+/*navbar*/
+.sidebar-container{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+
+
+.navbar{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  height:80px;
+ /* background-color: #00828c;*/
+ background-image: linear-gradient(to top, #e5e5e5 0%, white 100%);
+ /*background-color: #2F4050;*/
+ /*background-color: #443DF6;*/
+  color: black;
+}
+
+.Logo{
+  font-size: 30px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+
+}
+
+.home,.details,.yourPlans,.makePlan,.schedule,.logout,.admin{
+
+text-decoration: none;
+color:black;
+font-size:20px;
+padding:10px 10px;
+margin:0 10px;
+cursor: pointer;
+
+}
+
+.home-page {
+  background-image: url(./Pages/UserMenuComponents/img4.png);
+  background-size: cover;
+}
+
+.details-page{
+background-color: #92dfc8;
+
+}
+
+/*make-plan page*/
+.make-plan{
+ /* background-color: #92dfc8;*/
+  
+}
+
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.custom-select {
+  display: block;
+  width: 112%;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 8px 10px;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-select-lg {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 0.5rem 1.75rem 0.5rem 0.75rem;
+  border-radius: 0.3rem;
+  height: calc(1.5em + 1rem + 2px);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+.form-control-lg {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  height: calc(1.5em + 1rem + 2px);
+  
+}
+
+
+
+.btn-lg {
+  font-size: 1.25rem;
+  line-height: 2.0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.submit-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+
+
+
+/*schedule page*/
+.schedulee{
+ /*background-color: #92dfc8;*/
+  
+}
+
+.your-plans{
+ /* background-color: #92dfc8;*/
+
+}
+
+
+/*schedule*/
+body{
+ 
+  overflow: hidden;
+}
+
+.bg-light-gray { /*linia cu zilele*/
+  background-color: #f7f7f7;
+}
+
+.table-bordered thead td, .table-bordered thead th {
+  border-bottom-width: 2px;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.table-bordered td, .table-bordered th {
+  border: 1px solid #dee2e6;
+}
+
+
+/*.bg-sky.box-shadow {
+  box-shadow: 0px 5px 0px 0px #00a2a7
+}
+
+.bg-orange.box-shadow {
+  box-shadow: 0px 5px 0px 0px #af4305
+}
+
+.bg-green.box-shadow {
+  box-shadow: 0px 5px 0px 0px #4ca520
+}
+
+.bg-yellow.box-shadow {
+  box-shadow: 0px 5px 0px 0px #dcbf02
+}
+
+.bg-pink.box-shadow {
+  box-shadow: 0px 5px 0px 0px #e82d8b
+}
+
+.bg-purple.box-shadow {
+  box-shadow: 0px 5px 0px 0px #8343e8
+}
+
+.bg-lightred.box-shadow {
+  box-shadow: 0px 5px 0px 0px #d84213
+}
+*/
+
+/*.bg-sky {
+  background-color: #02c2c7
+}*/
+
+/*.bg-orange {
+  background-color: #e95601
+}*/
+
+/*.bg-green {
+  background-color: #5bbd2a
+}*/
+
+/*.bg-yellow {
+  background-color: #f0d001
+}*/
+
+/*.bg-pink {
+  background-color: #ff48a4
+}*/
+
+/*.bg-purple {
+  background-color: #9d60ff
+}*/
+
+/*.bg-lightred {
+  background-color: #ff5722
+}*/
+
+.padding-15px-lr {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.padding-5px-tb {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.margin-10px-bottom {
+  margin-bottom: 10px;
+}
+.border-radius-5 {
+  border-radius: 5px;
+}
+
+.margin-10px-top {
+  margin-top: 10px;
+}
+
+.font-size14 { /*dimensiunea orarului*/
+  font-size: 25px;
+ 
+}
+
+/*.text-light-gray {
+  color: #d6d5d5;
+}*/
+
+/*.font-size13 {
+  font-size: 13px;
+}*/
+
+/*.table-bordered td, .table-bordered th {
+  border: 1px solid #dee2e6;
+}*/
+
+.table .td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  
+}
+
+.Table td, .Table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.border-bottom {
+  border-bottom: 1px solid black;
+}
+
+table, tr, .td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+
+td {
+  height: 100px; /* inaltimea comună pentru toate celulele */
+  min-height: 100px; /* inaltime minima pentru celulele goale */
+  padding: 0;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  border: 1px solid #ccc;
+  min-width: 150px;
+ /* height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;*/
+}
+
+
+td span {
+  display: block;
+  width: 70%;
+}
+
+
+.centered-form-container {
+  
+max-height: 500px;
+overflow-y: auto;
+}
+
+label {
+  text-align: left;
+}
